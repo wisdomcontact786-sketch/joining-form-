@@ -1,1 +1,135 @@
+<html>
+  <head>
+    <title> Wisdom Community </title>
 
+    <style>
+    /* Container */
+    .contact-form {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px 35px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: 0.3s;
+    }
+    
+    .contact-form:hover {
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+    
+    /* Heading */
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    
+    /* Form Labels */
+    .contact-form label {
+      position: relative;
+      display: block;
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    
+    /* Input & Textarea */
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      background: #fafafa;
+    }
+    
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #4CAF50;
+      box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+      outline: none;
+      background: #fff;
+    }
+    
+    /* Placeholder */
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #aaa;
+      font-weight: 400;
+    }
+    
+    /* Textarea */
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+    
+    /* Button */
+    .contact-form button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 10px;
+      background: linear-gradient(135deg, #4CAF50, #43a047);
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .contact-form button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(76, 175, 80, 0.4);
+    }
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      .contact-form {
+        padding: 25px 20px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="contact-form">
+      <h2>Join Us</h2>
+    
+      <form action="https://formsubmit.co/wisdomcontact786@gmail.com" method="POST">
+    
+        <label>
+          <input type="text" name="name" placeholder="Your Name" required>
+        </label>
+    
+        <label>
+          <input type="email" name="email" placeholder="Your Email" required>
+        </label>
+
+        <label>
+          <input type="number" name="whatsapp" placeholder="Your WhatsApp Number" required>
+        </label>
+    
+        <label>
+          <textarea name="message" placeholder="Your Message ..." required></textarea>
+        </label>
+    
+        <!-- Redirect after submission -->
+        <input type="hidden" name="_next" value="https://wisdomcontact786-sketch.github.io/joining-form-/thanks2.html">
+        
+        <!-- Optional settings -->
+        <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <input type="hidden" name="_captcha" value="false">
+    
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </body>
+</html>
