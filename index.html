@@ -1,7 +1,6 @@
 <html>
   <head>
     <title> Wisdom Community </title>
-    
 
     <style>
     /* Container */
@@ -58,7 +57,7 @@
       background: #fff;
     }
     
-    /* Floating placeholder effect */
+    /* Placeholder */
     .contact-form input::placeholder,
     .contact-form textarea::placeholder {
       color: #aaa;
@@ -118,6 +117,9 @@
           <textarea name="message" placeholder="Write your message..." required></textarea>
         </label>
     
+        <!-- Redirect after submission -->
+        <input type="hidden" name="_next" value="thanks.html">
+        
         <!-- Optional settings -->
         <input type="hidden" name="_subject" value="New Contact Form Submission">
         <input type="hidden" name="_captcha" value="false">
@@ -127,4 +129,3 @@
     </div>
   </body>
 </html>
-    
