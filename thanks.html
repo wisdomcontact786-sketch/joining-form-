@@ -1,1 +1,108 @@
-<p><h1>all is well </h1></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Wisdom Community</title>
+  <style>
+    /* Body */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #e0eaf1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    /* Container */
+    .thankyou-container {
+      background: #fff;
+      padding: 50px 40px;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+      max-width: 500px;
+      width: 90%;
+      transition: transform 0.3s ease;
+    }
+
+    .thankyou-container:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Icon */
+    .thankyou-icon {
+      font-size: 60px;
+      color: #4CAF50;
+      margin-bottom: 20px;
+      animation: pop 0.6s ease forwards;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0); }
+      100% { transform: scale(1); }
+    }
+
+    /* Heading */
+    h1 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    /* Message */
+    p {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    /* Button */
+    .home-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #4CAF50, #43a047);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .home-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(76, 175, 80, 0.4);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .thankyou-container {
+        padding: 35px 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .thankyou-icon {
+        font-size: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thankyou-container">
+    <div class="thankyou-icon">✅</div>
+    <h1>Thank You for Joining Us!</h1>
+    <p>We appreciate you taking the time to connect with Wisdom Community. Your submission has been received successfully. Stay tuned for exciting updates, insights, and community news!</p>
+    <a href="index.html" class="home-btn">Go Back Home</a>
+  </div>
+
+</body>
+</html>
+
